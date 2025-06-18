@@ -86,7 +86,7 @@ public class TravelBlogTests {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("title"))).sendKeys("Test Post");
 
-        driver.findElement(By.name("image_url")).sendKeys("https://...");
+        driver.findElement(By.name("image_url")).sendKeys("https://i.pinimg.com/564x/b5/51/48/b55148745359e070a098137fee59e3a2.jpg");
         driver.findElement(By.name("content")).sendKeys("Automated post content.");
         driver.findElement(By.xpath("//button[contains(text(),'Post Blog')]")).click();
 
@@ -101,7 +101,7 @@ public class TravelBlogTests {
         driver.get("http://54.221.79.214:3000/add_post.php");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("title"))).sendKeys("Delete This Post");
-        driver.findElement(By.name("image_url")).sendKeys("https://...");
+        driver.findElement(By.name("image_url")).sendKeys("https://c4.wallpaperflare.com/wallpaper/485/433/250/minimalism-pixel-art-vladstudio-low-poly-wallpaper-preview.jpg");
         driver.findElement(By.name("content")).sendKeys("Post to delete");
         driver.findElement(By.xpath("//button[contains(text(),'Post Blog')]")).click();
 
@@ -138,7 +138,7 @@ public class TravelBlogTests {
         String updatedTitle = "Edited Post";
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("title"))).sendKeys(originalTitle);
-        driver.findElement(By.name("image_url")).sendKeys("https://...");
+        driver.findElement(By.name("image_url")).sendKeys("https://cdn.openart.ai/uploads/image_WIlqZQjk_1683368320260_512.webp");
         driver.findElement(By.name("content")).sendKeys("Original content for editing.");
         driver.findElement(By.xpath("//button[contains(text(),'Post Blog')]")).click();
 
@@ -206,7 +206,7 @@ public class TravelBlogTests {
 
         driver.get("http://54.221.79.214:3000/add_post.php");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("title"))).sendKeys("Edit Abort");
-        driver.findElement(By.name("image_url")).sendKeys("https://...");
+        driver.findElement(By.name("image_url")).sendKeys("https://ih1.redbubble.net/image.5629236487.8951/st,small,507x507-pad,600x600,f8f8f8.u1.jpg");
         driver.findElement(By.name("content")).sendKeys("Original Content");
         driver.findElement(By.xpath("//button[contains(text(),'Post Blog')]")).click();
 
